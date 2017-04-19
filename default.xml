@@ -13,7 +13,8 @@
 
   <default revision="refs/tags/android-7.1.2_r6"
            remote="aosp"
-           sync-j="4" />
+           sync-j="4"
+           sync-c="true" />
 
   # Our device tree and repos
   <project path="kernel/rpi" name="kernel_rpi" revision="nougat" remote="tab-pi"/>
