@@ -12,21 +12,17 @@
           review="android-review.googlesource.com"
           revision="refs/tags/android-7.1.2_r6" />
 
-  <default revision="refs/heads/nougat"
+  <default revision="nougat"
            remote="tab-pi"
            sync-c="true"
            sync-j="16" />
 
-  # Remove AOSP versions
-  <remove-project name="platform/external/mesa3d"/>
-  <project path="external/mesa3d" name="external_mesa3d" revision="nougat" remote="arpi"/>
-  <remove-project name="platform/external/drm_gralloc"/>
-  <project path="external/drm_gralloc" name="external_drm_gralloc" revision="nougat" remote="arpi"/>
-
-  # Our device tree and hardware repos
+  # Our device tree and repos
   <project path="kernel/rpi" name="kernel_rpi" revision="nougat" remote="tab-pi"/>
   <project path="hardware/rpi" name="hardware_rpi" revision="nougat" remote="arpi"/>
   <project path="device/brcm/rpi3" name="device_brcm_rpi3" revision="nougat" remote="arpi"/>
+  <project path="external/mesa3d" name="external_mesa3d" revision="nougat" remote="arpi"/>
+  <project path="external/drm_gralloc" name="external_drm_gralloc" revision="nougat" remote="arpi"/>
 
   # Remove unused AOSP device trees
   <remove-project name="device/google/dragon-kernel" />
@@ -143,7 +139,6 @@
   <project path="external/dlmalloc" name="platform/external/dlmalloc" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk" />
   <project path="external/donuts" name="platform/external/donuts" groups="pdk" />
-  <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc,pdk-fs" />
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk" />
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
@@ -263,7 +258,6 @@
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
-  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk" />
   <project path="external/minijail" name="platform/external/minijail" groups="pdk" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
