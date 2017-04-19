@@ -19,9 +19,10 @@
   # Our device tree and repos
   <project path="kernel/rpi" name="kernel_rpi" revision="nougat" remote="tab-pi"/>
   <project path="hardware/rpi" name="hardware_rpi" revision="nougat" remote="arpi"/>
-  <project path="device/brcm/rpi3" name="device_brcm_rpi3" revision="nougat" remote="arpi"/>
+  <project path="device/brcm/rpi3" name="device_brcm_rpi3" revision="nougat" remote="tab-pi"/>
   <project path="external/mesa3d" name="external_mesa3d" revision="nougat" remote="arpi"/>
   <project path="external/drm_gralloc" name="external_drm_gralloc" revision="nougat" remote="arpi"/>
+  <project path="frameworks/native" name="platform/frameworks/native" revision="nougat" remote="tab-pi" groups="pdk" />
 
   # AOSP
   <project path="build" name="platform/build" groups="pdk" >
@@ -331,7 +332,6 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
