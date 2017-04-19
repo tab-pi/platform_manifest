@@ -22,6 +22,7 @@
   <project path="device/brcm/rpi3" name="device_brcm_rpi3" revision="nougat" remote="tab-pi"/>
   <project path="external/mesa3d" name="external_mesa3d" revision="nougat" remote="arpi"/>
   <project path="external/drm_gralloc" name="external_drm_gralloc" revision="nougat" remote="arpi"/>
+  <project path="vendor/tab-pi" name="vendor_tab-pi" revision="nougat" remote="tab-pi"/>
   <project path="frameworks/native" name="frameworks_native" revision="nougat" remote="tab-pi" groups="pdk" />
 
   # AOSP
