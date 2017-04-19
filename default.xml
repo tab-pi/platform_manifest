@@ -9,13 +9,11 @@
 
   <remote name="aosp"
           fetch="https://android.googlesource.com"
-          review="android-review.googlesource.com"
-          revision="refs/tags/android-7.1.2_r6" />
+          review="android-review.googlesource.com" />
 
-  <default revision="nougat"
-           remote="tab-pi"
-           sync-c="true"
-           sync-j="16" />
+  <default revision="refs/tags/android-7.1.2_r6"
+           remote="aosp"
+           sync-j="4" />
 
   # Our device tree and repos
   <project path="kernel/rpi" name="kernel_rpi" revision="nougat" remote="tab-pi"/>
