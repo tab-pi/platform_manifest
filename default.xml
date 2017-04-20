@@ -24,6 +24,8 @@
   <project path="external/drm_gralloc" name="external_drm_gralloc" revision="nougat" remote="arpi"/>
   <project path="vendor/tab-pi" name="vendor_tab-pi" revision="nougat" remote="tab-pi"/>
   <project path="frameworks/native" name="frameworks_native" revision="nougat" remote="tab-pi" groups="pdk" />
+  <project path="frameworks/base" name="frameworks_base" revision="nougat" remote="tab-pi" groups="pdk-cw-fs,pdk-fs" />
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" revision="nougat" remote="tab-pi" groups="pdk" />
 
   # AOSP
   <project path="build" name="platform/build" groups="pdk" >
@@ -325,7 +327,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -358,7 +359,6 @@
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" groups="pdk" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" groups="pdk" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
