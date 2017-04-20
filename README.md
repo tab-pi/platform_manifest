@@ -1,8 +1,12 @@
-# Sync Android Source (AOSP)
+# Build Android for Raspberry Pi3
+## Getting Started
+---------------
+To get started with building Android from source, you'll need to get familiar with [Establishing a build environment](http://source.android.com/source/initializing.html).
+
+## Sync Android Source (AOSP)
  * $ repo init -u https://github.com/tab-pi/platform_manifest -b nougat
  * $ repo sync
 
-# Build for Raspberry Pi3
 ## Build Kernel
  * Install gcc-arm-linux-gnueabihf (For Ubuntu: $ sudo apt install gcc-arm-linux-gnueabihf)
  * $ cd kernel/rpi
@@ -22,7 +26,7 @@
    https://github.com/tab-pi/device_brcm_rpi3/wiki/Build-Errors
 
 ## Prepare SD card
- ### Partitions of the card should be set-up like followings.
+ ### Partitions of the card should be set-up like following:
   1. p1 512MB for BOOT : Do fdisk : W95 FAT32(LBA) & Bootable, mkfs.vfat
   2. p2 512MB for /system : Do fdisk, new primary partition, mkfs.ext4
   3. p3 512MB for /cache  : Do fdisk, mkfs.ext4
