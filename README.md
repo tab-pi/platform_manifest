@@ -28,7 +28,7 @@ To get started with building Android from source, you'll need to get familiar wi
 ## Prepare SD card
  ### Partitions of the card should be set-up like following:
   1. p1 512MB for BOOT : Do fdisk : W95 FAT32(LBA) & Bootable, mkfs.vfat
-  2. p2 512MB for /system : Do fdisk, new primary partition, mkfs.ext4
+  2. p2 1024MB for /system : Do fdisk, new primary partition, mkfs.ext4
   3. p3 512MB for /cache  : Do fdisk, mkfs.ext4
   4. p4 remainings for /data : Do fdisk, mkfs.ex4
   5. Set volume label for each partition - system, cache, userdata
